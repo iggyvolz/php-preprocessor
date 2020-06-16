@@ -1,0 +1,14 @@
+{
+    "name": "iggyvolz/php-preprocessor",
+    "description": "Proof-of-concept preprocessor for PHP",
+    "version": "0.1",
+    "require": {
+        "composer/semver": "^3.0",
+        "composer-runtime-api": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "iggyvolz\\phppreproccessor\\": "src/"
+        }
+    }
+}

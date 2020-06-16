@@ -1,0 +1,18 @@
+Proof-of-concept preprocessor for PHP that allows generating code for different PHP versions.  It uses composer/semver and Composer\InstalledVersions for comparisons.
+
+Needs Composer 2.0 to handle package comparisons
+
+If statements are used like so:
+#IF (predicate) (constraint)
+...
+#ELSE
+...
+#ENDIF
+
+The predicate is either php, an extension name, or a Composer package name.
+
+The constraint is a Composer semver constraint.
+
+Additionally, the statement:
+#ERROR (optional message)
+is supported - this will give an error during preprocessing.

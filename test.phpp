@@ -1,0 +1,12 @@
+<?php
+#IF composer/semver
+echo "have semver";
+#IF composer/semver2
+echo "this is a dummy";
+#ELSE
+echo "not have semver2";
+#ENDIF
+#ELSE
+#ERROR you must have semver
+echo "do not have";
+#ENDIF
